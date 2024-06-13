@@ -1,8 +1,9 @@
-
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    /* Center content horizontally */
     font-family: "Roboto Slab", "Times New Roman", serif;
     margin: 0;
 }
@@ -25,7 +26,6 @@ nav {
     justify-content: center;
     width: 100%;
     background-color: #11161b;
-
 }
 
 nav a {
@@ -44,8 +44,8 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1700px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
@@ -124,4 +124,67 @@ footer {
     background-color: #11161b;
     color: white;
     padding: 1rem 0;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    main {
+        display: block;
+        padding: 1rem 10px;
+    }
+
+    .card1,
+    .card2 {
+        width: calc(95% - 10px);
+        margin: 10px auto;
+    }
+
+    .card1 .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1 .content img {
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .card1 .content.reverse {
+        flex-direction: column;
+    }
+
+    .card1 .content.reverse {
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .card1 .content div {
+        text-align: center;
+    }
+
+    .card2 ul {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 1em;
+    }
+
+    .card1 .content img {
+        max-width: 80%;
+    }
+
+    .card2 ul {
+        padding-left: 15px;
+    }
 }
