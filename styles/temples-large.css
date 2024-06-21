@@ -1,4 +1,4 @@
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 800px) {
 
     .navigation {
         display: flex;
@@ -11,6 +11,8 @@
 
     .navigation a {
         text-align: center;
+        padding: 1.5rem;
+        font-size: 1.25rem;
     }
 
     main {
