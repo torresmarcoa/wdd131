@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: block;
+    padding: 1ch;
+    width: 100%;
+    background-color: #2b5264;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+main {
+    font-size: 1.3rem;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    margin: 1rem;
+    height: fit-content;
+    padding: 1rem;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+.label {
+    text-align: right;
+    font-weight: bold;
+}
+
+#icon {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #11161b;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,45 @@
+@media screen and (min-width: 640px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #wh::after {
+        content: "☀️";
+    }
+
+    h2 #icon {
+        display: none;
+    }
+
+   picture {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        display: flex;
+        object-fit: cover;
+    }
+
+    section {
+        background-color: white;
+        opacity: 85%;
+    }
+
+    section h2 {
+        background-color: aquamarine;
+        padding: 1rem ;
+        position: relative;
+        right: 1.25rem ;
+    }
+
+    #data {
+        grid-column: 1/2;
+        grid-row: 1/4
+    }
+
+    #weather {
+        grid-column: -1/-2;
+        grid-row: -1/-3;
+    }
+
+}
