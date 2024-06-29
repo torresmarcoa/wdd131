@@ -21,12 +21,12 @@
     }
 
     section {
-        background-color: white;
+        background-color: var(--text-color);
         opacity: 85%;
     }
 
     section h2 {
-        background-color: aquamarine;
+        background-color: var(--b-color3);
         padding: 1rem ;
         position: relative;
         right: 1.25rem ;

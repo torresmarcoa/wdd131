@@ -1,3 +1,10 @@
+:root {
+    --b-color1: #2b5264;
+    --b-color2: #11161b; 
+    --b-color3: aquamarine;
+    --text-color: white;
+}
+
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -7,8 +14,8 @@ header {
     display: block;
     padding: 1ch;
     width: 100%;
-    background-color: #2b5264;
-    color: white;
+    background-color:var(--b-color1);
+    color: var(--text-color);
     margin: auto;
     text-align: center;
 }
@@ -56,8 +63,8 @@ table {
 footer {
     width: 100%;
     text-align: center;
-    background-color: #11161b;
-    color: white;
+    background-color: var(--b-color2);
+    color: var(--text-color);
     padding: 1rem 0;
     font-size: 1.25rem;
 }
