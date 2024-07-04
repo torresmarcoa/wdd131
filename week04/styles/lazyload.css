@@ -1,0 +1,36 @@
+body {
+    margin: auto;
+}
+
+header{
+    background-color: aqua;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+footer {
+    background-color: aquamarine;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+    background: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
