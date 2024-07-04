@@ -31,7 +31,6 @@ body {
     margin-left: 15px;
 }
 
-
 .navigation {
     list-style: none;
     margin: 0 auto;
@@ -72,22 +71,32 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    grid-template-columns: 1fr;
     justify-items: center;
     margin: auto;
+    font-size: 1.2rem;
 }
 
-figure, img, figcaption {
+#temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
     max-width: 100%;
-}
-
-figure {
-    width: fit-content;
-}
-
-
-figcaption {
     text-align: center;
+}
+
+#temples section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px black;
+}
+
+#temples img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .hide-header {
