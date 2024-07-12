@@ -60,8 +60,7 @@ textarea {
     border-radius: 6px;
     padding: .75rem;
     color: #555;
-    width: 100%;
-    max-width: 100%;
+    width: 90%;
     appearance: none;
 }
 
