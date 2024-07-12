@@ -64,7 +64,7 @@ main {
     width: 100%;
     max-width: 100%;
     appearance: none;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
@@ -87,7 +87,7 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0 5px;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 input[type="submit"] {
@@ -100,7 +100,7 @@ input[type="submit"] {
     max-width: 400px;
     margin: auto;
     box-shadow: 1px 1px 4px #999;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .productForm #submitBtn {
@@ -117,8 +117,6 @@ footer {
 
 #reviewHTML {
     display: block;
-    margin: auto;
     text-align: center;
-    padding: 2rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
