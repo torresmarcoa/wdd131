@@ -30,7 +30,7 @@
                 </label>
             </div>
 
-            <div id="ratingOverall">Overall Rating</div>
+            <div id="ratingOverall"><label>Overall Rating</label></div>
             <div id="overallRating">
                 <label>&star;<input type="radio" name="rating" id="oneStar" required></label>
                 <label>&star;&star;<input type="radio" name="rating" id="twoStar" required></label>
@@ -40,11 +40,12 @@
             </div>
 
             <div>
-                <label>Date of Installation <input type="date" id="dateOfInstalation" name="installationDate" required></label>
+                <label>Date of Installation <input type="date" id="dateOfInstalation" name="installationDate"
+                        required></label>
             </div>
 
             <div>
-                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label>Which features did you find useful in the product? (Check all that apply)</label>
                 <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
                 <label><input type="checkbox" id="use" name="use" value="yes"> Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
@@ -59,7 +60,10 @@
                 <label>Your Name (optional)<input type="text" name="userName" id="userName"></label>
             </div>
 
-            <input type="submit" value="Post My Review">
+            <div id="submitBtn">
+                <input type="submit" value="Post My Review">
+            </div>
+
         </form>
     </main>
 

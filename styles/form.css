@@ -13,7 +13,7 @@ header {
     text-align: center;
     background-color: #27488f;
     color: white;
-    padding: 1rem;
+    padding: 1rem 0;
     width: 100%;
 }
 
@@ -49,21 +49,28 @@ main {
 
 .productForm label {
     display: block;
+    font-weight: 500;
 }
 
 .productForm input[type="text"],
-input[type="date"],
-select,
-textarea {
+.productForm input[type="date"],
+.productForm select,
+.productForm textarea {
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
-    padding: .75rem;
+    padding: .75rem; 
     color: #555;
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
     appearance: none;
+    font-size: 1.25rem; 
+    margin-bottom: 0.5rem; 
 }
 
+.productForm input[type="checkbox"] {
+    margin: .75rem; 
+}
 #overallRating {
     display: flex;
     justify-content: center;
@@ -79,6 +86,23 @@ textarea {
     justify-content: center;
     margin: 0 5px;
     font-size: 1.25rem;
+}
+
+input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#0c6dc9, #030944);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1.25rem;
+}
+
+.productForm #submitBtn{
+    text-align: center;
 }
 
 footer {
