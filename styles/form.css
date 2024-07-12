@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    background-color: #27488f;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.productForm {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 1rem;
+    box-sizing: border-box;
+}
+
+.productForm div {
+    margin: 1rem 0;
+    padding: .5rem 1%;
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.productForm #ratingOverall {
+    margin: -15px;
+    margin-left: auto;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.productForm label {
+    display: block;
+}
+
+.productForm input[type="text"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 100%;
+    appearance: none;
+}
+
+#overallRating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#overallRating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    font-size: 1.25rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #11161b;
+    color: white;
+    padding: 1rem 0;
+}

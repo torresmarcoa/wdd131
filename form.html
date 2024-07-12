@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - Form</title>
+    <meta name="author" content="Marco Torres">
+    <meta name="description" content="Marco's WDD 131: Dynamic Web Fundamentals form assignment">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="productForm">
+            <div>
+                <label>Product Name
+                    <select name="product" id="productSelect" required>
+                        <option disabled value="" selected>Select a Product &#9662;</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="ratingOverall">Overall Rating</div>
+            <div id="overallRating">
+                <label>&star;<input type="radio" name="rating" id="oneStar" required></label>
+                <label>&star;&star;<input type="radio" name="rating" id="twoStar" required></label>
+                <label>&star;&star;&star;<input type="radio" name="rating" id="threeStar" required></label>
+                <label>&star;&star;&star;&star;<input type="radio" name="rating" id="fourStar" required></label>
+                <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" id="fiveStar" required></label>
+            </div>
+
+            <div>
+                <label>Date of Installation <input type="date" id="dateOfInstalation" name="installationDate" required></label>
+            </div>
+
+            <div>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="use" name="use" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+            </div>
+
+            <div>
+                <label>Written Review (optional) <textarea name="wReview" id="wReview"></textarea></label>
+            </div>
+
+            <div>
+                <label>Your Name (optional)<input type="text" name="userName" id="userName"></label>
+            </div>
+
+            <input type="submit" value="Post My Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> - Marco Torres - Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
