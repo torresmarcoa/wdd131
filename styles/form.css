@@ -113,5 +113,12 @@ footer {
     background-color: #11161b;
     color: white;
     padding: 1rem 0;
-    flex-grow: 1;
+}
+
+#reviewHTML {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.25rem;
 }
