@@ -12,6 +12,10 @@ body {
     justify-content: center;
 }
 
+main {
+    max-width: 950px;
+}
+
 h1,
 h2 {
     font-family: "Josefin Sans", sans-serif;
@@ -33,6 +37,43 @@ header {
     background-color: var(--p-color);
     color: var(--text-color);
 }
+
+img {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+#tableColors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#tableColors th {
+    background-color: #999;
+}
+
+#tableColors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--p-color);
+    color: #e1e2eb;
+}
+
+.secondary {
+    background-color: var(--s-color);
+    color: #e1e2eb;
+}
+
+.text {
+    background-color: var(--text-color);
+}
+
 
 footer {
     text-align: center;
