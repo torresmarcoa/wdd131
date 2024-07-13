@@ -1,7 +1,7 @@
 :root {
     --p-color: #11161b;
     --s-color: #27488f;
-    --text-color: #e1e2eb;
+    --text-color: white;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
 
 main {
     max-width: 950px;
+    width: 100%;
 }
 
 h1,
@@ -62,12 +63,12 @@ img {
 
 .primary {
     background-color: var(--p-color);
-    color: #e1e2eb;
+    color: var(--text-color);
 }
 
 .secondary {
     background-color: var(--s-color);
-    color: #e1e2eb;
+    color: var(--text-color);
 }
 
 .text {
