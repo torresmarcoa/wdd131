@@ -1,0 +1,43 @@
+:root {
+    --p-color: #11161b;
+    --s-color: #27488f;
+    --text-color: #e1e2eb;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-left: 2%;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--p-color);
+    color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--s-color);
+    color: var(--text-color);
+}
