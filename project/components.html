@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CompuEssentials | Home</title>
+    <title>Compuessentials | Components</title>
     <meta name="author" content="Marco Torres">
-    <meta name="description" content="CompuEssentials homepage">
+    <meta name="description" content="CompuEssentials components">
     <link rel="stylesheet" href="styles/compuessentials.css">
     <link rel="stylesheet" href="styles/compuessentials-large.css">
-    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/components.js"></script>
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/nav.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="compoBody">
     <header>
         <h1>
             CompuEssentials
@@ -26,33 +26,23 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="components.html">Components</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="periferics.html">Periferics</a></li>
                 <li><a href="siteplan.html" target="_blank">Site Plan</a></li>
             </ul>
         </nav>
         <a id="menu" href="#" aria-label="Open Menu"></a>
     </header>
-    <main id="indexMain">
-        <picture class="hero">
-            <source srcset="images/hero-large.webp" media="(min-width: 670px)">
-            <img src="images/hero-small.webp" alt="motherboard" width="640" height="960">
-        </picture>
 
-        <section id="title">
-            <h2>A Brief History of Computers</h2>
-        </section>
-
-        <div id="timeline"></div>
-
+    <main id="mainComponents">
+        <h2 id="compTitle">List of core components</h2>
+        <div id="components"></div>
     </main>
-    <footer>
+
+    <footer id="componentsFooter">
         <p>©<span id="currentyear"></span> - Marco Torres - Mexico</p>
         <p id="lastModified"></p>
     </footer>
-
-
-
 </body>
 
 </html>
