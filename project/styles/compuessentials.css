@@ -298,3 +298,23 @@ footer {
     color: var(--text-color);
     padding: 1rem;
 }
+
+#filter label{
+    display: block;
+    margin: auto;
+}
+
+#priceFilter {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 100%;
+    appearance: none;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
