@@ -249,11 +249,13 @@ footer {
 
 /*Components specific styling*/
 
-#compoBody {
+#compoBody,
+#peripheralsBody {
     background-color: var(--text-color);
 }
 
-#mainComponents {
+#mainComponents,
+#mainPeripherals {
     display: grid;
     max-width: 1500px;
     flex-direction: column;
@@ -263,7 +265,8 @@ footer {
     margin: auto;
 }
 
-#components {
+#components,
+#peripherals {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -272,7 +275,8 @@ footer {
     text-align: center;
 }
 
-#components section {
+#components section,
+#peripherals section {
     border: 1px solid var(--p-color);
     padding: 15px;
     background-color: var(--s-color);
@@ -280,14 +284,16 @@ footer {
     color: var(--text-color);
 }
 
-#components img {
+#components img,
+#peripherals img {
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 10px;
 }
 
-#compTitle {
+#compTitle,
+#peripheralsTitle {
     background-color: var(--s-color);
     color: var(--text-color);
     padding: 1rem;
