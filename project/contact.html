@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompuEssentials | Contact Us!</title>
+    <meta name="author" content="Marco Torres">
+    <meta name="description" content="CompuEssentials contact us page">
+    <link rel="stylesheet" href="styles/compuessentials.css">
+    <link rel="stylesheet" href="styles/compuessentials-large.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/nav.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+</head>
+<body id="contactUsBody">
+    <header>
+        <h1>
+            CompuEssentials
+        </h1>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="peripherals.html">Peripherals</a></li>
+                <li><a href="siteplan.html" target="_blank">Site Plan</a></li>
+            </ul>
+        </nav>
+        <a id="menu" href="#" aria-label="Open Menu"></a>
+    </header>
+
+    <main id="contactUsMain">
+        <form method="get" action="success.html" class="form">
+
+            <legend></legend>
+
+            <label for="name">Name*:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email*:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="subject">Subject*:</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="message">Message*:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <label for="category">Category (optional):</label>
+            <select id="category" name="category">
+                <option disabled value="" selected>Select an Option &#9662;</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="general">General Inquiry</option>
+            </select>
+    
+            <div id="submitBtn">
+                <input type="submit" value="Contact Us!">
+            </div>
+        </form>
+
+    </main>
+
+    <footer id="contactFooter">
+        <p>©<span id="currentyear"></span> - Marco Torres - Mexico</p>
+        <p id="lastModified"></p>
+        <p><a href="reference.html">References</a></p>
+    </footer>
+    
+</body>
+</html>

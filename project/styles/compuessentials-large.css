@@ -1,31 +1,5 @@
 @media only screen and (min-width: 670px) {
 
-    header {
-        justify-content: space-between;
-    }
-
-    .navigation {
-        display: flex;
-    }
-
-    .navigation li {
-        display: block;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 1.5rem;
-        font-size: 1.25rem;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .hide-header h1 {
-        display: block;
-    }
-
     #indexMain {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -60,4 +34,32 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+}
+
+@media only screen and (min-width: 850px){
+    header {
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .hide-header h1 {
+        display: block;
+    }
 }

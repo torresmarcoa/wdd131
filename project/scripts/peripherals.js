@@ -87,7 +87,7 @@ function displayPeripherals(filter = null) {
         const image = document.createElement("img");
 
         name.textContent = per.peripheral;
-        rangePrice.innerHTML = `<span>Range Price (In dollars): </span> ${per.rangePricePrice}`;
+        rangePrice.innerHTML = `<span>Range Price (In dollars): </span> ${per.priceRange}`;
         aPrice.innerHTML = `<span>Average Price (In dollars): </span> ${per.averagePrice}`;
         desc.innerHTML = `<span>Description: </span> ${per.description}`;
 

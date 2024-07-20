@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CompuEssentials | Home</title>
+    <title>CompuEssentials | Contact Us! | Success </title>
     <meta name="author" content="Marco Torres">
-    <meta name="description" content="CompuEssentials homepage">
+    <meta name="description" content="CompuEssentials contact us page">
     <link rel="stylesheet" href="styles/compuessentials.css">
     <link rel="stylesheet" href="styles/compuessentials-large.css">
-    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/success.js"></script>
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/nav.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="contactUsBody">
     <header>
         <h1>
             CompuEssentials
@@ -26,33 +26,21 @@
 
         <nav>
             <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="components.html">Components</a></li>
                 <li><a href="peripherals.html">Peripherals</a></li>
-                <li><a href="contact.html">Contact us!</a></li>
                 <li><a href="siteplan.html" target="_blank">Site Plan</a></li>
-            
             </ul>
         </nav>
         <a id="menu" href="#" aria-label="Open Menu"></a>
     </header>
-    <main id="indexMain">
-        <picture class="hero">
-            <source srcset="images/hero-large.webp" media="(min-width: 850px)">
-            <img src="images/hero-small.webp" alt="motherboard" width="640" height="960">
-        </picture>
 
-        <section id="title">
-            <p>The primary objective of the CompuEssentials website is to provide clear and accessible information about
-                basic computer concepts and their components. The site aims to help users understand the history of
-                computers and their essential components.</p>
-            <h2>A Brief History of Computers</h2>
-        </section>
-
-        <div id="timeline"></div>
-        
+    <main id="successMain">
+        <h2>Thanks!</h2>
+        <p>Thank you for reaching out to us. We will get back to you soon</p>
     </main>
 
-    <footer id="indexFooter">
+    <footer>
         <p>©<span id="currentyear"></span> - Marco Torres - Mexico</p>
         <p id="lastModified"></p>
         <p><a href="reference.html">References</a></p>

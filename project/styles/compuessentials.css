@@ -7,8 +7,10 @@
 body {
     margin: 0;
     background-color: var(--p-color);
+    height: 100%;
 }
 
+/* Typography */
 h1,
 h2,
 h3 {
@@ -17,11 +19,9 @@ h3 {
 
 p {
     font-family: "Roboto Slab", serif;
-    ;
 }
 
-/*Header and navigation*/
-
+/* Header and Navigation */
 header {
     justify-content: space-evenly;
     display: flex;
@@ -88,10 +88,7 @@ header h1 {
     display: none;
 }
 
-
-
-/*Main (image and timeline*/
-
+/* Main (image and timeline) */
 #indexMain {
     display: grid;
     grid-template-columns: 1fr;
@@ -108,6 +105,14 @@ header h1 {
 #title {
     grid-column: 1/2;
     grid-row: 1/2;
+}
+
+#title p {
+    font-size: 1.25rem;
+    background-color: var(--p-color);
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color);
 }
 
 #title h2 {
@@ -169,7 +174,6 @@ header h1 {
     top: 10px;
 }
 
-
 .child:nth-child(even) {
     float: right;
 }
@@ -217,7 +221,6 @@ header h1 {
         transform: translateY(500px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -229,28 +232,44 @@ header h1 {
         transform: translateY(0);
         opacity: 1;
     }
-
     100% {
         transform: translateY(500px);
         opacity: 0;
     }
 }
 
-
-/*Footer*/
+/* Footer */
 footer {
     background-color: var(--s-color);
     color: var(--text-color);
     text-align: center;
     padding: 1rem;
     margin: auto;
+}
+
+#indexFooter {
     position: relative;
 }
 
-/*Components specific styling*/
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: var(--p-color);
+    padding: .75rem;
+    border-radius: 6px;
+    margin-top: 25px;
+}
 
+footer a:hover {
+    background-color: var(--text-color);
+    color: var(--p-color);
+}
+
+/* Components specific styling */
 #compoBody,
-#peripheralsBody {
+#peripheralsBody,
+#contactUsBody,
+#mainRef {
     background-color: var(--text-color);
 }
 
@@ -273,6 +292,11 @@ footer {
     padding: 20px;
     max-width: 400px;
     text-align: center;
+}
+
+#mainRef main{
+    margin-left: 100px;
+    margin-bottom: 25px;
 }
 
 #components section,
@@ -299,7 +323,8 @@ footer {
     padding: 1rem;
 }
 
-#filter label{
+/* Filters */
+#filter label {
     display: block;
     margin: auto;
 }
@@ -317,4 +342,72 @@ footer {
     text-align: center;
     margin-bottom: 0.5rem;
     font-weight: 700;
+}
+
+/* Form */
+#contactUsMain {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 109px;
+    margin-bottom: 100px;
+}
+
+label {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: solid 1px #999;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+}
+
+form input:required,
+textarea:required {
+    border-right: solid 8px red;
+}
+
+form input:required:valid,
+textarea:required:valid {
+    border-right: solid 8px green;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--p-color), var(--s-color));
+    color: var(--text-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1rem;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+}
+
+/* Success Message */
+#successMain {
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 320px;
+    padding: 1rem;
 }

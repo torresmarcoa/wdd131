@@ -80,7 +80,7 @@ function displayComponents(filter = null) {
         const image = document.createElement("img");
 
         name.textContent = compo.component;
-        rangePrice.innerHTML = `<span>Range Price (In dollars): </span> ${compo.rangePricePrice}`;
+        rangePrice.innerHTML = `<span>Range Price (In dollars): </span> ${compo.priceRange}`;
         aPrice.innerHTML = `<span>Average Price (In dollars): </span> ${compo.averagePrice}`;
         desc.innerHTML = `<span>Description: </span> ${compo.description}`;
 
