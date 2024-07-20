@@ -34,6 +34,14 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .child {
+        font-size: 1rem;
+    }
+
+    .content {
+        width: 200px;
+    }
+
 }
 
 @media only screen and (min-width: 850px){
