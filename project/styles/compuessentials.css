@@ -147,7 +147,7 @@ header h1 {
     position: relative;
     margin: 20px;
     opacity: 0;
-    font-size: .75rem;
+    font-size: .80rem;
 }
 
 .child:nth-child(odd) {
@@ -199,8 +199,8 @@ header h1 {
 }
 
 .content {
-    width: 100px;
-    padding: 15px;
+    width: 120px;
+    padding: 10px;
     color: var(--text-color);
     background: var(--p-color);
     opacity: 82%;
